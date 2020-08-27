@@ -16,31 +16,34 @@
                         <form action="#" class="form-group" name="form" id="message-form" method="post">
                             <div class="row">
                                 <input type="text" class="form-control col-md-6 col-xs-6" id="expressao" name="expressao">
-                                <button type="submit" onclick="limpar()" class="form-control btn btn-success col-md-6 col-xs-6">C</button>
+                                <button type="button" onclick="limpar()" class="btn btn-warning col-md-6 col-xs-6">C</button>
+                                <button type="button" onclick="equal()" class="btn btn-success col-md-6 col-xs-6">=</button>
                             </div>
+                            
                             <div class="row">
                                 <button type="button" value="7" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">7</button>
                                 <button type="submit" value="8" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">8</button>
                                 <button type="submit" value="9" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">9</button>
-                                <button type="submit" value="/" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">/</button>
+                                <button type="submit" value="/" onclick="insert(this)" class="btn btn-danger col-md-3 col-xs-3 btn-calc">/</button>
                             </div>
                             <div class="row">
                                 <button type="submit" value="4" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">4</button>
                                 <button type="submit" value="5" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">5</button>
                                 <button type="submit" value="6" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">6</button>
-                                <button type="submit" value="*" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">X</button>
+                                <button type="submit" value="*" onclick="insert(this)" class="btn btn-danger col-md-3 col-xs-3 btn-calc">X</button>
                             </div>
                             <div class="row btn-igual-row">
                                 <button type="submit" value="1" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">1</button>
                                 <button type="submit" value="2" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">2</button>
                                 <button type="submit" value="3" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc">3</button>
-                                <button type="submit" value="-" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc ">-</button>
+                                <button type="submit" value="-" onclick="insert(this)" class="btn btn-danger col-md-3 col-xs-3 btn-calc ">-</button>
                             </div>
                             <div class="row">                                
                                 <button type="submit" value="0" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc" >0</button>
-                                <button type="submit" value="." onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc" >.</button>
-                                <button type="submit" onclick="equal()" class="btn btn-primary col-md-3 col-xs-3 btn-calc ">=</button>
-                                <button type="submit" value="+" onclick="insert(this)" class="btn btn-primary col-md-3 col-xs-3 btn-calc ">+</button>
+                                <button type="submit" value="." onclick="insert(this)" class="btn btn-primary col-md-2 col-xs-2 btn-calc" >.</button>
+                                <button type="submit" value="(" onclick="insert(this)" class="btn btn-primary col-md-2 col-xs-2 btn-calc" >(</button>
+                                <button type="submit" value=")" onclick="insert(this)" class="btn btn-primary col-md-2 col-xs-2 btn-calc" >)</button>
+                                <button type="submit" value="+" onclick="insert(this)" class="btn btn-danger col-md-3 col-xs-3 btn-calc ">+</button>
                             </div>
                         </form>
                     </div>
