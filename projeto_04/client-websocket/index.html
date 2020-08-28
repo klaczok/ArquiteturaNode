@@ -9,14 +9,17 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div id="status">Conectando...</div>
+        <header>
+            <h1 class="bem-vindo text-primary">Bem vindo à Calculadora Node.js/Websocket</h1>
+        </header>
+        
         <main class="row">
-                <div class="col-xs-12 col-md-6"> <h1 class="text-center">Calculadora Node<br><hr>Rafael Klaczok</h1> </div>
-                <div class="col-xs-12 col-md-6"> 
+                <div class="col-xs-12 col-md-3"> <h1 class="text-center">Calculadora Node<br><hr>Rafael Klaczok</h1> </div>
+                <div class="col-xs-12 col-md-9"> 
                     <div class="col-xs-12 col-md-6 text-center">
                         <form action="#" class="form-group" name="form" id="message-form" method="post">
                             <div class="row">
-                                <input type="text" class="form-control col-md-6 col-xs-6" id="expressao" name="expressao">
+                                <input type="text" class="form-control col-md-6 col-xs-6" id="expressao" name="expressao" placeholder="1+2">
                                 <button type="button" onclick="limpar()" class="btn btn-warning col-md-6 col-xs-6">C</button>
                                 <button type="submit" class="btn btn-success col-md-6 col-xs-6">=</button>
                             </div>
@@ -46,9 +49,6 @@
                                 <button type="button" value=")" onclick="insert(this)" class="btn btn-primary col-md-2 col-xs-2 btn-calc" >)</button>
                                 <button type="button" value="+" onclick="insert(this)" class="btn btn-danger col-md-3 col-xs-3 btn-calc ">+</button>
                             </div>
-                            <textarea
-                            id="message" readonly
-                          ></textarea>
                         </form>
                         
                     </div>
@@ -57,6 +57,9 @@
 
                     
         </main>
+        <footer class="row">
+            <p id="status" class="col-xs-12 col-md-12">Conectando...</p>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

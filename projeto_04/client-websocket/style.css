@@ -6,8 +6,33 @@
 .btn-igual{
     height: 100px;
 }
-main {
-    padding-top: 100px;
-    padding-left: 5%;
-    padding-right: 5%;
+.bem-vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#status{
+    font-size: x-small;
+    bottom: 0;
+    color: green;
+}
+hr{
+    font-size: large;
+    color: black; 
+}
+
+@media only screen and (min-width: 1030px) {
+    main {
+        padding-top: 100px;
+        margin-bottom: 50px;
+        padding-left: 450px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    main {
+        padding-top: 100px;
+        margin-bottom: 50px;
+        padding-left: 200px;
+    }
+  }

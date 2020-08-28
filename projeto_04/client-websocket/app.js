@@ -28,7 +28,7 @@ window.onload = function () {
 
   // Função para tratar mensagens enviadas pelo servidor.
   socket.onmessage = function (event) {
-    document.form.message.value = event.data;
+    document.form.expressao.value = event.data;
    
   };
 
