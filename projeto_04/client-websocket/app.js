@@ -9,7 +9,7 @@ window.onload = function () {
   var btnCalc = document.getElementsByClassName("btn-calc");
 
   // Cria um novo socket.
-  var socket = new WebSocket("ws://echo.websocket.org/");
+  var socket = new WebSocket("ws://localhost:9898/");
 
  
 
@@ -28,9 +28,8 @@ window.onload = function () {
 
   // Função para tratar mensagens enviadas pelo servidor.
   socket.onmessage = function (event) {
-    var message = event.data;
-    messagesList.innerHTML +=
-      '<li class="received"><span>Recebido:</span>' + message + "</li>";
+    document.form.message.value = event.data;
+   
   };
 
   // Função chamada no momento da desconexão do servidor com o cliente
@@ -44,14 +43,10 @@ window.onload = function () {
     e.preventDefault();
 
     // Pega a mensagem digitada no campo de mensagem do formulário
-    var message = messageField.value;
+    var message = document.form.expressao.value;
 
     // Envia a mensagem através do websocket
     socket.send(message);
-
-    // Adiciona a mensagem enviada na tela
-    messagesList.innerHTML +=
-      '<li class="sent"><span>Enviado:</span>' + message + "</li>";
 
     // Limpa o campo de mensagem
     messageField.value = "";
